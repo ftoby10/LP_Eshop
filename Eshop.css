@@ -1,0 +1,215 @@
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-left: 1px;
+    color: black;
+    font-size: 40px;
+    margin: 40px;
+    background-color: #d5d1def2;
+}
+
+h3 {
+    margin-left: 1px;
+    color: black;
+    font-size: 40px;
+    margin: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3:hover {
+    color: rgb(187, 54, 171);
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1def2;
+}
+
+tbody tr:hover {
+    background-color: rgb(233, 199, 229);
+}
+
+.status {
+    padding: .5rem ;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.status.Statut {
+    border-radius: 0%;
+}
+
+input {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+input[ value="Valider"] {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+input[ value="Modifier"] {
+    background-color: skyblue;
+    color: rgb(29, 29, 110);
+}
+
+input[ value="Annuler"] {
+    background-color: rgb(250, 85, 85);
+    color: rgb(65, 60, 60);
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+main.table {
+    width: 90vw;
+    height: auto;
+    margin: 50px ; 
+    background-color: #fff5;
+
+    backdrop-filter: blur(6px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden ;
+    font-size: 30px;
+}
+
+.table_header {
+    width: 100%;
+    height: 50px;
+    margin-right: .6rem;
+    padding: .9rem rem
+}
+
+.table_body {
+    width: 95%;
+    max-height: calc(89% - .1.6rem);
+    background-color: hsl(0, 29%, 95%);
+
+    margin: .9rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+}
+
+.table_body ::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: rgba(211, 124, 124, 0.333);
+    visibility: hidden;
+}
+
+.table_body :-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+@media ( max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+
+
+/* Titre de la landing page */
+h1{
+    margin-left: 1px;
+    color: rgb(216, 21, 190);
+    font-size: 60px;
+    cursor: pointer;
+} 
+
+header {
+    width: 100%;
+    margin-right: 10px 30px;
+    padding: 50px;
+    display: flex;
+    background-color: black ;
+    border-radius: 15px;
+    align-items: center;
+}
+
+/* Menu de navigation */
+nav.nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 600px;
+}
+
+li a {
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header li a:hover {
+    background-color: rgb(216, 21, 190);
+    border-radius: 5px;
+}
+
+
+/* Pieds de page */
+
+#footer {
+    background-color: rgb(101, 101, 128);
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#footer p {
+    margin-bottom: 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
